@@ -1,0 +1,36 @@
+{
+    "_metadata": {
+        "major_version": 1,
+        "minor_version": 1
+    },
+    "display_information": {
+        "name": "slapp-bolt-js-esc1"
+    },
+    "features": {
+        "bot_user": {
+            "display_name": "slapp-bolt-js-esc1",
+            "always_online": false
+        }
+    },
+    "oauth_config": {
+        "scopes": {
+            "user": [
+                "admin",
+                "admin.conversations:read",
+                "admin.conversations:write",
+                "admin.apps:read"
+            ],
+            "bot": [
+                "chat:write",
+                "channels:history",
+                "app_mentions:read"
+            ]
+        }
+    },
+    "settings": {
+        "org_deploy_enabled": true,
+        "socket_mode_enabled": true,
+        "token_rotation_enabled": false
+    },
+    "outgoing_domains": []
+}
