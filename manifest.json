@@ -4,21 +4,17 @@
         "minor_version": 1
     },
     "display_information": {
-        "name": "slapp-bolt-js-esc1"
+        "name": "slapp-bolt-js-fresh-friday"
     },
     "features": {
         "bot_user": {
-            "display_name": "slapp-bolt-js-esc1",
+            "display_name": "slapp-bolt-js-fresh-friday",
             "always_online": false
         }
     },
     "oauth_config": {
         "scopes": {
             "user": [
-                "admin",
-                "admin.conversations:read",
-                "admin.conversations:write",
-                "admin.apps:read"
             ],
             "bot": [
                 "chat:write",
@@ -28,6 +24,13 @@
         }
     },
     "settings": {
+        "event_subscriptions": {
+            "request_url": "https://510f-24-53-254-84.ngrok.io/slack/events",
+            "bot_events": [
+                "app_mention",
+                "message.channels"
+            ]
+        },
         "org_deploy_enabled": true,
         "socket_mode_enabled": true,
         "token_rotation_enabled": false,

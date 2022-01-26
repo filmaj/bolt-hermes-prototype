@@ -4,11 +4,6 @@
             "default": "npm run manifest --silent"
         }
     },
-    "triggers": {
-        "command": {
-            "default": "deno --unstable run --quiet --import-map=import_map.json project.ts --triggers"
-        }
-    },
     "run": {
         "command": {
             "default": "source .env && node index.js"

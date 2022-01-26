@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "manifest": "node -e 'console.log(JSON.stringify(require(\"./app.js\").manifest))'",
+    "triggers": "node -e 'console.log(\"[]\")'",
     "mime": "mime -h"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@slack/bolt": "^3.6.0"
+    "@slack/bolt": "^3.6.0",
+    "ngrok": "^4.3.0"
   }
 }
