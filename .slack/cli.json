@@ -4,6 +4,11 @@
             "default": "npm run manifest --silent"
         }
     },
+    "triggers": {
+        "command": {
+            "default": "node -e 'console.log(\"[]\")'"
+        }
+    },
     "run": {
         "command": {
             "default": "source .env && node index.js"
