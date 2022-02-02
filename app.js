@@ -3,12 +3,13 @@ const fs = require('fs');
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-  token: process.env.SLACK_BOT_TOKEN,
-  // signingSecret: process.env.SLACK_SIGNING_SECRET,
+  developerMode: process.env.SLACK_CLI_SOCKETMODE_OVERRIDE ? true : false,
+  token: process.env.SLACK_CLI_XOXB || process.env.SLACK_BOT_TOKEN,
+  signingSecret: 'whatever', // process.env.SLACK_SIGNING_SECRET,
   // logLevel: 'debug',
   manifest: JSON.parse(fs.readFileSync('manifest.json', 'utf-8')),
-  socketMode: true, // add this
-  appToken: process.env.SLACK_APP_TOKEN // add this
+  // socketMode: true, // add this
+  appToken: process.env.SLACK_CLI_XAPP || process.env.SLACK_APP_TOKEN // add this
 });
 // Listens to incoming messages that contain "hello"
 app.message('hello', async ({ message, say }) => {

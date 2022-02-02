@@ -11,7 +11,7 @@
     },
     "run": {
         "command": {
-            "default": "source .env && node index.js"
+            "default": "node index.js"
         },
         "watcher": {
             "filter_regex": "^.*\\.js$",
