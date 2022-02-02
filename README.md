@@ -1,15 +1,11 @@
 # Setup
 
-1. Create a `.env` file with required env vars for your app:
-  - `SLACK_SIGNING_SECRET`
-  - `SLACK_BOT_TOKEN`
-  - `SLACK_APP_TOKEN` (if using socket mode)
-2. Make sure you use the `cli-poc` branch of bolt-js, and from within that repo:
+1. Make sure you use the `cli-poc` branch of bolt-js, and from within that repo:
   - Make sure you `npm install` and `npm run build`
   - Run `npm link`
-3. Back in this directory, run `npm install` then `npm link @slack/bolt`
-4. Run `source .env` to pull in your app-specific env vars
+2. Back in this directory, run `npm install` then `npm link @slack/bolt`
+3. Make sure you have the `bolt-local-run-hackery` branch of slack-cli, and build that branch via `make build`.
 
 # Play
 
-At this point you should be able to run `hermes` commands while inside the repo.
+At this point you should be able to run `hermes` (or `slack` - but from wherever your slack-cli binaries are built) commands while inside this repo.
